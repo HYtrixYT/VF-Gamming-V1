@@ -1,0 +1,187 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("VF Gamming V1", "GrapeTheme")
+
+
+---Main
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+----------
+speed slider
+
+MainSection:NewSlider("Speed", "Speed", 30, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+----------
+
+killaura
+
+MainSection:NewToggle("Killaura", "Killaura", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/L7c1RLpY", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/L7c1RLpY", true))()
+    end
+end)
+
+----------
+
+reach
+
+MainSection:NewToggle("Reach", "Reach", function(state)
+    if state then
+       loadstring(game:HttpGet("https://pastebin.com/V6kh1bCg", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/V6kh1bCg", true))()
+    end
+end)
+
+----------
+
+inf jumps
+
+MainSection:NewButton("INF Jumps", "INF Jumps", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/z0vzNeCR", true))()
+end)
+
+----------
+
+no fall damage
+
+MainSection:NewToggle("Nofall damage", "Nofall damage", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/MDmbwNiQ", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/MDmbwNiQ", true))()
+    end
+end)
+-----------------------------------------------------------------------------------------
+---visual
+
+local Visual = Window:NewTab("Visual")
+local VisualSection = Visual:NewSection("Visual")
+
+---Tracers
+
+VisualSection:NewToggle("Tracers", "Tracers", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/A2z5mLFu", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/A2z5mLFu", true))()
+    end
+end)
+
+---esp
+
+VisualSection:NewToggle("ESP", "ESP", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/yELdKQ4z", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/yELdKQ4z", true))()
+    end
+end)
+
+-----------------------------------------------------------------------------------------------
+---Animation
+
+local Animation = Window:NewTab("Animation")
+local AnimationSection = Animation:NewSection("Animation")
+
+---ZOMBIE
+
+AnimationSection:NewToggle("ZOMBIE", "ZOMBIE", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/t3yTSPRn",true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/t3yTSPRn",true))()
+    end
+end)
+
+---NINJA
+
+AnimationSection:NewToggle("NINJA", "NINJA", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/bwGLPVV7",true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/bwGLPVV7",true))()
+    end
+end)
+
+---Robot
+
+AnimationSection:NewToggle("ROBOT", "ROBOT", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/ckzGJyJL", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/ckzGJyJL", true))()
+    end
+end)
+--------------------------------------------------------------------------------------------
+---capes
+
+local Capes = Window:NewTab("Capes/hat")
+local CapesSection = Capes/hat:NewSection("Capes")
+
+---FerestZ cape
+
+CapesSection:NewToggle("Ferestz Cape", "Ferestz Cape", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/j0NYRmJa", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/j0NYRmJa", true))()
+    end
+end)
+
+---Rainbow cape
+
+CapesSection:NewToggle("Rainbow cape", "Rainbow cape", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/KtwbwJRV", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/KtwbwJRV", true))()
+    end
+end)
+----------------------------------------------------------------------------------------------------
+---other scripts
+
+local otherscript = Window:NewTab("other script")
+local otherscriptSection = otherscript:NewSection("other script")
+
+---JN HHV10
+
+otherscriptSection:NewButton("JN HHV10", "JN HHV10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/JNO10"))()
+end)
+
+---vapev4
+
+otherscriptSection:NewButton("Vapev4", "Vapev4", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+---Gamebreaker
+
+otherscriptSection:NewButton("Gamebreaker", "Gamebreaker", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/s4r826Hi", true))()
+end)
+
+---Darkrai x
+
+otherscriptSection:NewButton("Darkrai x", "Darkrai x", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/bedwars/main/Script", true))()
+end)
+
+---softbed
+
+otherscriptSection:NewButton("softbed", "softbed", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
+end)
+-------------------------------------------------------------------------------------------------------------
+---credits
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("creidt to VF Gamming")
